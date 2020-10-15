@@ -39,7 +39,8 @@ export default new Vuex.Store({
       state.memesSlick = [];
 
       for (let i = 0; i < 12; i += 1) {
-        str = Math.round(Math.random() * tempPayload.length - 1);
+        str = Math.round(Math.random() * (tempPayload.length - 1));
+        console.log(str);
         state.memesSlick.push(tempPayload[str]);
         tempPayload.splice(str, 1);
       }
