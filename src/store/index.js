@@ -21,8 +21,8 @@ export default new Vuex.Store({
           context.commit('MEMES', res.data.data.memes);
           context.commit('SLICKCAROUSEL', res.data.data.memes);
         })
-        .catch((err) => {
-          console.log(err);
+        .catch(() => {
+          context.commit('LOADING', false);
         });
     },
   },
@@ -32,6 +32,7 @@ export default new Vuex.Store({
     },
     MEMES(state, payload) {
       state.memes = payload;
+      console.log(state.memes);
     },
     SLICKCAROUSEL(state, payload) {
       let str = 0;
@@ -40,7 +41,6 @@ export default new Vuex.Store({
 
       for (let i = 0; i < 12; i += 1) {
         str = Math.round(Math.random() * (tempPayload.length - 1));
-        console.log(str);
         state.memesSlick.push(tempPayload[str]);
         tempPayload.splice(str, 1);
       }

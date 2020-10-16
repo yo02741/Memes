@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container bg-dark ">
     <Loading :active.sync="isLoading"
               loader="bars"
               color="palevioletred"

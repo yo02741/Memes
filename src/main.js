@@ -11,6 +11,8 @@ import VueSlickCarousel from 'vue-slick-carousel';
 import 'vue-slick-carousel/dist/vue-slick-carousel.css';
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
 
+import { VueMasonryPlugin } from 'vue-masonry';
+
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
@@ -23,6 +25,8 @@ window.$ = $;
 Vue.component('Loading', Loading);
 
 Vue.component('VueSlickCarousel', VueSlickCarousel);
+
+Vue.use(VueMasonryPlugin);
 
 Vue.config.productionTip = false;
 
