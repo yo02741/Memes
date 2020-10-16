@@ -6,7 +6,7 @@
       </div>
     </div>
     <ul class="row py-3 pl-0" v-masonry transition-duration="0.3s" item-selector=".memeItem">
-      <li v-masonry-tile class="col-12 col-md-6 col-lg-4 py-4 px-4 memeItem"
+      <li v-masonry-tile class="col-6 col-lg-4 py-4 px-4 memeItem"
        v-for="meme in memes" :key="meme.id">
         <a :href="meme.url" class="w-100" target="_BLANK">
           <img :src="meme.url" class="w-100 memePic">
