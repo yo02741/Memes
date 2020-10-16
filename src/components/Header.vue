@@ -16,12 +16,12 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarNav">
           <router-link to="/" class="nav-link px-4 text-white">
             <span class="itemText">Home</span>
           </router-link>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarNav">
           <router-link to="/data" class="nav-link px-4 text-white">
             <span class="itemText">SeeMore</span>
           </router-link>
