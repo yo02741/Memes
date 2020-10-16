@@ -34,15 +34,6 @@
 import { mapGetters } from 'vuex';
 import $ from 'jquery';
 
-$(window).scroll(() => {
-  const scrollVal = $(window).scrollTop();
-  if (scrollVal > 150) {
-    $('#good').fadeIn();
-  } else {
-    $('#good').fadeOut();
-  }
-});
-
 export default {
   name: 'Home',
   data() {
@@ -80,6 +71,9 @@ export default {
   },
   created() {
     this.getData();
+  },
+  mounted() {
+    $('html,body').animate({ scrollTop: 0 }, 'slow');
   },
 };
 </script>

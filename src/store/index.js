@@ -32,7 +32,6 @@ export default new Vuex.Store({
     },
     MEMES(state, payload) {
       state.memes = payload;
-      console.log(state.memes);
     },
     SLICKCAROUSEL(state, payload) {
       let str = 0;

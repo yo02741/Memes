@@ -17,9 +17,6 @@ export default {
     Datalist,
   },
   computed: {
-    // isLoading() {
-    //   return this.$store.state.isLoading;
-    // },
     ...mapGetters(['isLoading']),
   },
 };

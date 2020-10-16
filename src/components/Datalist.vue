@@ -26,11 +26,6 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  data() {
-    return {
-
-    };
-  },
   methods: {
     getData() {
       this.$store.dispatch('getData');
